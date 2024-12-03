@@ -1,0 +1,86 @@
+html{
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 100vh; 
+    padding: 225px 50px;
+}
+
+.texto, .formulario{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.texto{
+    color: #fff;
+    margin: 0px 60px 0px 0px;   
+}
+
+.texto h1{
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.formulario textarea {
+    height: 100px;
+    resize: none;
+}
+
+.formulario button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.formulario button:hover {
+    background-color: #3CCC87;
+}
+
+.formulario .alerta{
+    color: #F52E2E;
+    font-size: 10px;
+    display: none;
+}
+
+.formulario .alerta.obrigatorio{
+    display: block;
+}
+
+.formulario .invalidado {
+    border: 1px solid #F52E2E;
+}
+
+.formulario .validado{
+    border: 1px solid #00C22B;
+}

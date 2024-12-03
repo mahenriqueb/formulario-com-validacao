@@ -1,0 +1,17 @@
+@media (max-width: 768px){
+    main{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 50px;
+    }
+
+    .texto{
+        margin-bottom: 50px;
+    }
+
+    .formulario{
+        display: flex;
+        gap: 15px;
+    }
+
+}
